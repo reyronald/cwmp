@@ -4,7 +4,8 @@ namespace App\CWMP;
 
 use App\Inform;
 
-use CWMP;
+use CWMP\IInformRequestStorage;
+use CWMP\InformRequest;
 
 class InformRequestDBStorage implements IInformRequestStorage
 {

@@ -2,11 +2,6 @@
 
 namespace CWMP;
 
-// use App\Helpers\InformRequestDBStorage;
-// use App\Helpers\InformRequestFileStorage;
-// use App\Helpers\GetParameterValuesResponseDBStorage;
-// use App\Helpers\GetParameterValuesResponseFileStorage;
-
 class AutoConfigurationServer
 {
 	private $rawRequest;
@@ -15,11 +10,16 @@ class AutoConfigurationServer
 
 	public $requestQueue;
 
+	private $informStorage;
+	private $paramValuesStorage;
 	private $options;
 
 	public function __construct(IInformRequestStorage $informStorage, IGetParameterValuesResponseStorage $paramValuesStorage, array $options)
 	{
+		$this->informStorage = $informStorage;
+		$this->paramValuesStorage = $paramValuesStorage;
 		$this->options = $options;
+
 		$this->handleOptionErrors();
 
 		if ( ($this->rawRequest = file_get_contents("php://input")) === '') return;
@@ -62,11 +62,11 @@ class AutoConfigurationServer
 
 		switch ( $this->methodName ) {
 			case 'Inform':
-				$informReq = new InformRequest($this->xmlRequest, $informStorage, $this->options);
+				$informReq = new InformRequest($this->xmlRequest, $this->informStorage, $this->options);
 				break;
 
 			case 'GetParameterValuesResponse':
-				$parameterValues = new GetParameterValuesResponse($this->xmlRequest, $paramValuesStorage);
+				$parameterValues = new GetParameterValuesResponse($this->xmlRequest, $this->paramValuesStorage);
 				break;
 
 			case 'GetParameterNamesResponse':

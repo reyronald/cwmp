@@ -5,7 +5,8 @@ namespace App\CWMP;
 use App\Inform;
 use App\ParameterList;
 
-use CWMP;
+use CWMP\IGetParameterValuesResponseStorage;
+use CWMP\GetParameterValuesResponse;
 
 class GetParameterValuesResponseDBStorage implements IGetParameterValuesResponseStorage
 {

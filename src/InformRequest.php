@@ -23,7 +23,7 @@ class InformRequest
 	private $storage;
 	private $options;
 
-	public function __construct($xml, InformRequestStorageable $_storage, array $options)
+	public function __construct($xml, IInformRequestStorage $_storage, array $options)
 	{
 		$this->storage = $_storage;
 		$this->options = $options;

@@ -7,7 +7,7 @@ class GetParameterValuesResponse
 	public $ParameterValues;
 
 	private $storage;
-	public function __construct($xml, GetParameterValuesResponseStorageable $_storage) 
+	public function __construct($xml, IGetParameterValuesResponseStorage $_storage) 
 	{
 		$this->storage = $_storage;
 

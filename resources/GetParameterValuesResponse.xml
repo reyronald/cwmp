@@ -1,0 +1,65 @@
+<SOAP-ENV:Envelope
+ xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+ xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:cwmp="urn:dslforum-org:cwmp-1-0">
+  <SOAP-ENV:Body>
+    <cwmp:GetParameterValuesResponse>
+      <ParameterList SOAP-ENC:arrayType="cwmp:ParameterValueStruct[13  ]">
+        <ParameterValueStruct>
+        <Name>InternetGatewayDevice.WEB_GUI.Status.LTE_Status.LTE_System.State</Name>
+        <Value xsi:type="xsd:string">SIM Detecting</Value>
+        </ParameterValueStruct>
+        <ParameterValueStruct>
+        <Name>InternetGatewayDevice.WEB_GUI.Status.LTE_Status.LTE_System.ConnectTime</Name>
+        <Value xsi:type="xsd:string"></Value>
+        </ParameterValueStruct>
+        <ParameterValueStruct>
+        <Name>InternetGatewayDevice.WEB_GUI.Status.LTE_Status.LTE_System.DL_Frequency</Name>
+        <Value xsi:type="xsd:string"></Value>
+        </ParameterValueStruct>
+        <ParameterValueStruct>
+        <Name>InternetGatewayDevice.WEB_GUI.Status.LTE_Status.LTE_System.UL_Frequency</Name>
+        <Value xsi:type="xsd:string"></Value>
+        </ParameterValueStruct>
+        <ParameterValueStruct>
+        <Name>InternetGatewayDevice.WEB_GUI.Status.LTE_Status.LTE_System.Bandwidth</Name>
+        <Value xsi:type="xsd:string"></Value>
+        </ParameterValueStruct>
+        <ParameterValueStruct>
+        <Name>InternetGatewayDevice.WEB_GUI.Status.LTE_Status.LTE_System.RSRP0</Name>
+        <Value xsi:type="xsd:string"></Value>
+        </ParameterValueStruct>
+        <ParameterValueStruct>
+        <Name>InternetGatewayDevice.WEB_GUI.Status.LTE_Status.LTE_System.RSRP1</Name>
+        <Value xsi:type="xsd:string"></Value>
+        </ParameterValueStruct>
+        <ParameterValueStruct>
+        <Name>InternetGatewayDevice.WEB_GUI.Status.LTE_Status.LTE_System.RSRQ</Name>
+        <Value xsi:type="xsd:string"></Value>
+        </ParameterValueStruct>
+        <ParameterValueStruct>
+        <Name>InternetGatewayDevice.WEB_GUI.Status.LTE_Status.LTE_System.CINR0</Name>
+        <Value xsi:type="xsd:string"></Value>
+        </ParameterValueStruct>
+        <ParameterValueStruct>
+        <Name>InternetGatewayDevice.WEB_GUI.Status.LTE_Status.LTE_System.CINR1</Name>
+        <Value xsi:type="xsd:string"></Value>
+        </ParameterValueStruct>
+        <ParameterValueStruct>
+        <Name>InternetGatewayDevice.WEB_GUI.Status.LTE_Status.LTE_System.TXPower</Name>
+        <Value xsi:type="xsd:string"></Value>
+        </ParameterValueStruct>
+        <ParameterValueStruct>
+        <Name>InternetGatewayDevice.WEB_GUI.Status.LTE_Status.LTE_System.CellID</Name>
+        <Value xsi:type="xsd:string"></Value>
+        </ParameterValueStruct>
+        <ParameterValueStruct>
+        <Name>InternetGatewayDevice.WEB_GUI.Status.LTE_Status.LTE_System.PCI</Name>
+        <Value xsi:type="xsd:string"></Value>
+        </ParameterValueStruct>
+      </ParameterList>
+    </cwmp:GetParameterValuesResponse>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

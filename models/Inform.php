@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace CustomAppName;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -8,6 +8,6 @@ class Inform extends Model
 {
     public function parameterList()
     {
-        return $this->hasOne('App\ParameterList');
+        return $this->hasOne('CustomAppName\ParameterList');
     }
 }

@@ -42,7 +42,7 @@ class ACSMigration extends Migration
         Schema::create('parameter_lists', function(Blueprint $table) {
             $table->increments('id')->unsigned()->unique();
             $table->integer('inform_id')->unsigned();
-            $table->text('imsi', 16);
+            $table->string('imsi', 16);
             $table->string('wan_mac', 16);
             $table->string('model_id');
             $table->string('model_name');

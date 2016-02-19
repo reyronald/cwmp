@@ -13,8 +13,13 @@ xmlns:cwmp="urn:dslforum-org:cwmp-1-0">
 	<soap-env:Body>
 
 		<cwmp:GetParameterValues>
-		  	<ParameterNames arrayType="string[1]">
+		  	<ParameterNames arrayType="string[7]">
 		  		<string>InternetGatewayDevice.WEB_GUI.Status.LTE_Status.LTE_System.</string>
+				<string>InternetGatewayDevice.WEB_GUI.Status.Network_Status.WAN_Information.WAN_MAC</string>
+				<string>InternetGatewayDevice.WEB_GUI.Status.Device_Status.Device_Status.Model_ID</string>
+				<string>InternetGatewayDevice.DeviceInfo.ModelName</string>
+				<string>InternetGatewayDevice.WEB_GUI.Status.System_Status.System_Information.Device_Up_Time</string>
+				<string>InternetGatewayDevice.WEB_GUI.Status.Device_Status.Device_Status.IMSI</string>
 			</ParameterNames>
 		</cwmp:GetParameterValues>
 

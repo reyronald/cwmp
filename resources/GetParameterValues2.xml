@@ -1,0 +1,23 @@
+<?xml version="1.0"?> 
+<soap-env:Envelope 
+xmlns:soap-enc="http://schemas.xmlsoap.org/soap/encoding/"
+xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/"
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:cwmp="urn:dslforum-org:cwmp-1-0">
+
+	<Header>
+		<cwmp:NoMoreRequests>1</cwmp:NoMoreRequests>
+	</Header>
+
+	<soap-env:Body>
+
+		<cwmp:GetParameterValues>
+		  	<ParameterNames arrayType="string[1]">
+		  		<string>.</string>
+			</ParameterNames>
+		</cwmp:GetParameterValues>
+
+	</soap-env:Body>
+</soap-env:Envelope>
+	

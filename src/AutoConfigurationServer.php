@@ -77,7 +77,7 @@ class AutoConfigurationServer
 			default:
 				$message ="Unknown Method: `{$this->methodName}`\r\n`{$this->rawRequest}`"; 
 				echo $message;
-				throw new Exception($message);
+				throw new \Exception($message);
 				break;
 		}
 	}

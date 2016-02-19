@@ -1,8 +1,8 @@
 # README
 
-#### Laravel
+#### Laravel 5
 
-Include the following in the `app\config.php`'s file 'providers' array:
+Include the following in the `app\config.php`'s file `providers` array:
 
 	CWMP\Laravel\CWMPServiceProvider::class
 

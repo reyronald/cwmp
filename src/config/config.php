@@ -1,7 +1,6 @@
 <?php
 
 return [
-
 	'informs' => [
 		'model' => 'CWMP\Model\Inform'
 	],

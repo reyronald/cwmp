@@ -8,6 +8,6 @@ class Inform extends Model
 {
     public function parameterList()
     {
-        return $this->hasOne('CustomAppName\ParameterList');
+        return $this->hasOne('CWMP\Model\ParameterList');
     }
 }

@@ -8,6 +8,6 @@ class ParameterList extends Model
 {
     public function inform()
     {
-    	return $this->belongsTo('Inform');
+    	return $this->belongsTo('CWMP\Model\Inform');
     }
 }

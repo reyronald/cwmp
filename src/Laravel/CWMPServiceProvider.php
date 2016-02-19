@@ -9,19 +9,9 @@ use Symfony\Component\HttpFoundation\Response;
 
 class CWMPServiceProvider extends ServiceProvider
 {
-	public function boot()
-	{
-		$this->garbageCollect();
-	}
-
 	public function register()
-	{
-		$this->prepareResources();
-	}
-
-	protected function prepareResources()
-	{
-        // Publish config
+	{        
+		// Publish config
         $config = realpath(__DIR__.'/../config/config.php');
 
         $this->mergeConfigFrom($config, 'rrey.cwmp');
@@ -36,6 +26,5 @@ class CWMPServiceProvider extends ServiceProvider
         $this->publishes([
             $migrations => $this->app->databasePath().'/migrations',
         ], 'migrations');
-
 	}
 }
